@@ -1,0 +1,10 @@
+[package]
+name = "card_game"
+version = "0.1.0"
+license = "Apache-2.0"
+description = "A Move contract for a simple card game."
+
+[dependencies]
+
+[addresses]
+card_game = "0x0"

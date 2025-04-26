@@ -4,6 +4,13 @@ module game::core {
     use sui::transfer;
     use sui::vec::Vector;
 
+    const BASIC_TYPE : u8 = 0;
+    const FIRE_TYPE : u8 = 1;
+    const WATER_TYPE : u8 = 2;
+    const DEATH_TYPE : u8 = 3;
+    const MYSTIC_TYPE : u8 = 4;
+
+
     // Oyuncu yapısı
     struct Player has key, store {
         id: UID,
