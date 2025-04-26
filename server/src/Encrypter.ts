@@ -1,6 +1,6 @@
 import crypto from "crypto";
 
-class EncryptedStorageService {
+class Encrypter {
   private secret: string;
   private key: Buffer;
 
@@ -46,4 +46,4 @@ class EncryptedStorageService {
 }
 
 
-export default new EncryptedStorageService("SEPSECRET_KEY");
+export default new Encrypter("SEPSECRET_KEY");

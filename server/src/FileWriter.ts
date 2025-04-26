@@ -2,9 +2,9 @@ import fs from 'fs';
 import path from 'path';
 
 // Function to save a JSON object to a file under the battles/ directory
-export const saveJsonToFile = (userAddress: string,fileName: string, data: object): void => {
+export const saveJsonToFile = (fileName: string, data: object): void => {
     try {
-        const dirPath = path.join(__dirname, `battles/${userAddress}`);
+        const dirPath = path.join(__dirname, `battles/`);
         const filePath = path.join(dirPath, `${fileName}.json`);
 
         // Ensure the battles directory exists

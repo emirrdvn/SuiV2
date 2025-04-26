@@ -1,7 +1,7 @@
 import express from 'express';
 import {authMiddleware } from './middlewares/accountIdChecker';
 import battleRouter from './routes/ClientBattleRoutes';
-import EncrypedStorageService from './EncrypedStorageService';
+import EncrypedStorageService from './Encrypter';
 const app = express();
 const port = 3000;
 
