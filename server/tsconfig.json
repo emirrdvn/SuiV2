@@ -8,6 +8,6 @@
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true
     },
-    "include": ["src/**/*.ts", "src/app.ts"],
+    "include": ["src/**/*.ts", "src/app.ts", "src/BattleSystem.ts"],
     "exclude": ["node_modules"]
   }

@@ -2,6 +2,8 @@ import { ConnectButton, useCurrentAccount } from "@mysten/dapp-kit";
 import { isValidSuiObjectId } from "@mysten/sui/utils";
 import { Box, Container, Flex, Heading } from "@radix-ui/themes";
 import { useState } from "react";
+import Game from "./Game";
+
 
 
 function App() {
@@ -15,7 +17,7 @@ function App() {
   return (
     <>
           <ConnectButton />
-          {currentAccount ? <div>ağır yaşamlar</div> : (
+          {currentAccount ? <Game></Game> : (
             <Heading>Please connect your wallet</Heading>
           )}
     </>
